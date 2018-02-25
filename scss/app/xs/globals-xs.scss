@@ -4,4 +4,85 @@
 
 body {
     font-family: 'SanFranciscoDisplay-Regular';
+    background-color: $sand;
+    font-size: 18px;
+}
+footer,
+header {
+    background-color: $slate;
+    color: $sand;
+    position: relative;
+
+    a {
+        color: $sand;
+    }
+}
+
+.video-wrapper {
+	position: relative;
+
+	&:before {
+		display: block;
+		content: "";
+		width: 100%;
+		padding-top: (9 / 16) * 100%;
+	}
+
+	> video {
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+	}
+}
+
+.one-logo {
+    width: 75px;
+    color: $sand;
+    fill: $slate;
+}
+
+.copyright {
+    position: absolute;
+
+}
+
+img {
+    max-width: 100%;
+}
+
+.download,
+.download:hover {
+    text-decoration: none;
+    color: $slate;
+}
+
+.v-align {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.main {
+    color: $rough;
+
+    h3 {
+        color: $slate;
+    }
+}
+.mc-input {
+    border: 0;
+    background-color: $slate;
+    color: $black;
+    outline: none;
+    border-bottom: 2px solid $black;
+    min-width: 300px;
+    &:focus {
+        outline: none;
+    }
+    &::placeholder {
+        color: $black;
+    }
 }
