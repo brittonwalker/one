@@ -45,11 +45,6 @@ header {
     fill: $slate;
 }
 
-.copyright {
-    position: absolute;
-
-}
-
 img {
     max-width: 100%;
 }
@@ -85,4 +80,39 @@ img {
     &::placeholder {
         color: $black;
     }
+}
+
+.mc-field-group {
+    position: relative;
+
+    #mc-embedded-subscribe {
+        position: absolute;
+        right: 0;
+        background-color: transparent;
+        border: 0;
+        outline: none;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}
+footer {
+    position: relative;
+
+    img {
+        width: 400px;
+    }
+}
+footer #mc_embed_signup {
+    position: absolute;
+    right: 0;
+    transform: rotate(90deg);
+    bottom: 0;
+}
+.copyright {
+    position: absolute;
+    left: 0;
+    transform: rotate(-90deg);
+    bottom: 0;
 }
